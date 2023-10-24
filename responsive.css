@@ -1,0 +1,84 @@
+/* extra small device */
+@media only screen and (max-width:480px){
+/* nav style */
+nav{
+    padding: 15px;
+}
+.navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        gap: 15px;
+        padding:15px 0px;
+        align-items: center;
+        background-color: black;
+}
+.check-Btn{
+    display: block;
+}
+#checkBox:checked~.navbar{
+    display: flex;
+}
+/* nav style */
+ /* banner style */
+ .banner-container{
+    padding:25px 0px;
+}
+ .banner{
+    flex-direction: column;
+    padding:20px;
+}
+.banner-text{
+    flex-basis: 100%;
+    gap:10px;
+}
+.banner-text h2{
+    font-size: 2.2em;
+}
+.banner-text h4{
+    font-size: 1em;
+}
+.banner-img{
+    flex-basis: 100%;
+}
+/* banner style */
+
+/* menu style */
+.menus{
+    grid-template-columns: repeat(1,1fr);
+    padding: 15px;
+}
+/* menu style */
+
+/* about style */
+.about{
+    flex-direction: column;
+    padding: 20px;
+}
+.gift .coupon{
+    width:100%;
+}
+.gift h4{
+    font-size: 1.5em;
+}
+.submit{
+    width: 50%;
+}
+/* about style */
+
+/* contact style */
+.contacts{
+   flex-direction: column;
+   padding: 20px;
+}
+/* contact style */
+
+/* footer style */
+footer{
+    font-size: 1em;
+}
+/* footer style */
+}
