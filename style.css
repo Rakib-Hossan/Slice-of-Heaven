@@ -3,19 +3,20 @@
     padding:0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fira+Sans:wght@400;500;600;700&family=Kaushan+Script&family=Markazi+Text:wght@400;600;700&family=Merriweather:wght@300;400;700&family=Noto+Serif:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap');
 
 /* common style */
 header{
     background-color: black;
     position: sticky;
     top: 0px;
+    z-index: 4;
 }
 
 /* common style */
 
 /* navigation style */
 nav{
+    
     display:flex;
     max-width: 1240px;
     justify-content: space-between;
@@ -38,11 +39,11 @@ nav{
 }
 .navbar li a{
     text-decoration: none;
-    color:#ffc35f;
+    color:white;
 }
 
 .navbar li a:hover{
-    color: #b4091f;
+    color: #ffc35f;
     border-bottom: 2px solid #b4091f;
 }
 
@@ -74,7 +75,6 @@ nav{
     font-size: 1.5em;
 }
 .banner-text h2{
-    font-family: 'kaushan';
     font-size: 4rem;
 }
 .banner-text span{
@@ -142,7 +142,6 @@ nav{
     color:#ffc35f;
 }
 
-
 .order{
     padding:10px 20px;
     background-color: #b4091f;
@@ -164,7 +163,7 @@ nav{
     background-image: url(/images/about-banner.jpg);
     background-size: cover;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 .about-bg{
     background-color: black;
@@ -232,3 +231,73 @@ nav{
     border: 2px solid #ffc35f;
 }
 /* about style */
+
+/* contact style */
+#contact-container{
+    background-color:black;
+
+}
+.contacts{
+    max-width: 1240px;
+    margin:0px auto;
+    color:#ffc35f;
+    padding:50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.25em;
+    flex-basis: 50%;
+}
+.social{
+    font-size: 2em;
+    margin-right:10px
+}
+.social a{
+    text-decoration: none;
+}
+.fa-facebook{
+    color:blue;
+}
+.fa-square-instagram{
+    color:red;
+}
+.fa-whatsapp{
+    color:green;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 10px;
+}
+
+.contact-form input,textarea{
+    color:#ffc35f;
+    padding:10px 20px;
+    background-color: transparent;
+    border: 2px solid #ffc35f;
+    border-radius: 15px;
+}
+
+/* contact style */
+
+/* footer style */
+footer{
+    color:#ffc35f;
+    font-size: 1.25em;
+    text-align: center;
+    background-color: black;
+    padding:10px 0px;
+}
+footer span{
+    color:#b4091f;
+    font-weight: 600;
+}
+/* footer style */
