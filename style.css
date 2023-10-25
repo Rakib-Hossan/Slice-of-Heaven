@@ -69,6 +69,7 @@ nav{
     max-width:1240px;
     margin: 0px auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
@@ -119,8 +120,8 @@ nav{
     max-width: 1240px;
     margin: 0px auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:50px;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
 }
 .menu{
     background-color: #ffffffa9;
@@ -128,14 +129,21 @@ nav{
     box-shadow: 2px 5px 10px gray;
     border-radius: 7%;
 }
+.menu-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .menu-img img{
     width: 100%;
+    height: auto;
     border-radius: 5%;
 }
 .menu-text{
     display: flex;
     flex-direction: column;
-    gap:10px
+    gap:10px;
+    margin-top:10px;
 }
 .menu-title{
     color:#b4091f;
@@ -158,7 +166,7 @@ nav{
     color: #ffffff;
     border:2px solid #b4091f;
     font-size: 1em;
-    width: 50%;
+    width: 150px;
 }
 
 .order:hover{
@@ -184,6 +192,7 @@ nav{
     opacity: 0.7;
 }
 .about{
+    max-width: 1240px;
     padding:50px 0px;
     margin: 0px auto;
     display: flex;
@@ -192,8 +201,8 @@ nav{
     align-items: center;
 }
 .about-text{
-    max-width: 1240px;
-    flex-basis: 50%;
+
+    flex-basis:80%;
     display: flex;
     flex-direction: column;
     gap: 20px;

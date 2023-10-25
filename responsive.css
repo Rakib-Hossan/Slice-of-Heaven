@@ -1,14 +1,16 @@
-/* extra small device */
-@media only screen and (max-width:480px){
-/* nav style */
+/* common style for responsive  */
+@media only screen and (max-width:786px){
+   /* nav style */
 nav{
-    padding: 15px;
+    width:90%;
+    margin: 0 auto;
+    padding-top:10px;
 }
 .navbar{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         right: 0;
         gap: 15px;
@@ -22,12 +24,16 @@ nav{
 #checkBox:checked~.navbar{
     display: flex;
 }
-/* nav style */
+/* nav style */ 
+}
+
  /* banner style */
  .banner-container{
     padding:25px 0px;
 }
  .banner{
+    width:90%;
+    margin: 0 auto;
     flex-direction: column;
     padding:20px;
 }
@@ -36,7 +42,7 @@ nav{
     gap:10px;
 }
 .banner-text h2{
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 .banner-text h4{
     font-size: 1em;
@@ -47,9 +53,22 @@ nav{
 /* banner style */
 
 /* menu style */
+.menu{
+    width:90%;
+    height: auto;
+    margin: 0 auto;
+}
+/* menu style */
+
+/* common style */
+
+/* extra small device */
+@media only screen and (max-width:576px){
+/* menu style */
 .menus{
     grid-template-columns: repeat(1,1fr);
     padding: 15px;
+    place-items: center;
 }
 /* menu style */
 
@@ -57,6 +76,9 @@ nav{
 .about{
     flex-direction: column;
     padding: 20px;
+}
+.about-text{
+    text-align: justify;
 }
 .gift .coupon{
     width:100%;
@@ -81,4 +103,86 @@ footer{
     font-size: 1em;
 }
 /* footer style */
+}
+
+/* medium device  */
+
+@media screen and (min-width:577px) and (max-width:786px){
+    /* menu style */
+    .menus{
+        grid-template-columns: repeat(2,1fr);
+        gap:15px;
+        padding:15px;
+    }
+    /* menu style */
+
+    /* about style */
+    .gift .coupon{
+        width:100%;
+    }
+    .submit{
+        width: 50%;
+    }
+    /* about style */
+
+    /* contact style */
+    .contacts{
+        width:90%;
+        
+    }
+    /* contact style */
+}
+/* medium device */
+
+/* large device  */
+
+@media screen and (min-width:787px) and (max-width:1300px){
+     /* nav style */
+    nav{
+        width:90%;
+        margin: 0 auto;
+        padding-top:10px;
+    }
+    /* nav style */
+    
+    /* banner style */
+    .banner{
+        width:90%;
+        margin: 0 auto;
+        flex-direction:row;
+        padding:20px;
+    }
+    /* banner style  */
+
+    /* menu style */
+    .menus{
+        grid-template-columns: repeat(3,1fr);
+        gap:15px;
+        padding:15px;
+    }
+    /* menu style */
+
+    /* about style */
+    .gift .coupon{
+        width:100%;
+    }
+    .submit{
+        width: 150px;
+    }
+    /* about style */
+
+    /* contact style */
+    .contacts{
+        width:90%;
+        
+    }
+    /* contact style */
+}
+/* large device */
+
+/* extra large device */
+@media screen and (min-width:1301px) and (max-width:4000px){
+    .banner{
+        flex-direction:row;
+    }
 }
